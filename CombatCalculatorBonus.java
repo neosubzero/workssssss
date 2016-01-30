@@ -38,6 +38,7 @@ public class CombatCalculatorBonus
         System.out.println("Your HP: " + HeroHealth);
         //Print the Player’s magic points
         System.out.println("Your MP: " + HeroMagicPower);
+        System.out.println();
         
         /*Combat menu prompt*/
         //Print option 1: Sword Attack
@@ -50,6 +51,7 @@ public class CombatCalculatorBonus
         System.out.println("4) Run Away");
         //Prompt player for action
         System.out.println("Action?");
+        
         //Declare variable that will be used for retry answer
         int Answer;
         //Declare variable for action choices
@@ -58,6 +60,7 @@ public class CombatCalculatorBonus
         while ((Action != 1 && Action != 2 && Action != 3 && Action != 4) || (Action == 2 && HeroMagicPower < 3)) {
         //Variable for user input (as number) and acquire value from Scanner object
         Action = input.nextInt();
+        System.out.println();
        
         
             //If player chose option 1, (check with equality operator)
@@ -67,6 +70,7 @@ public class CombatCalculatorBonus
                  MonsterHealth = MonsterHealth - HeroAttackPower;
                 //print attack text:
             System.out.println("You strike the " + MonsterName + " with your sword for " + HeroAttackPower + " damage");
+            System.out.println();
             }
             
                 //Else if player chose option 2, (check with equalit yoperator)
@@ -81,9 +85,11 @@ public class CombatCalculatorBonus
                     HeroMagicPower = HeroMagicPower - 3;
                     //print spell message:
                     System.out.println("You cast the weaken spell on the monster.");
+                    System.out.println();
                     }
                     else {
                     System.out.println("You don't have enough mana");
+                    System.out.println();
                     }
                 
                 }
@@ -95,6 +101,7 @@ public class CombatCalculatorBonus
                         HeroMagicPower = HeroMagicPower + 1;
                     //print charging message:
                     System.out.println("You focus and charge your magic power.");
+                    System.out.println();
                     }
             
                         //Else if the player chose option 4, (check with equality operator)
@@ -103,12 +110,14 @@ public class CombatCalculatorBonus
                             LoopLoop = false;
                         //print retreat message:
                         System.out.println("You run away!");
+                        System.out.println();
                         }
             
                             //Else the player chose incorrectly
                             else {
                             //print an error message:
                             System.out.println("I don't understand that command.");
+                            System.out.println();
                             }
         }
         
@@ -117,6 +126,7 @@ public class CombatCalculatorBonus
         //Have monster attack player and print message    
         HeroHealth = HeroHealth - MonsterAttackPower;
         System.out.println(MonsterName + " hits you for 15 damage");
+        System.out.println();
         }
         
             //If monster's health is 0 or below
