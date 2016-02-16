@@ -1,0 +1,11 @@
+- Variable names should start with a lowercase letter!!!!!
++ Great variable names, although I would have called the loop control variable gameLoop and not LoopLoop
++ Great formatting
+
+- I get erroneous behavior when I attempt to cast a spell.  The console stops displaying the prompt text until I provide another combat option. 
+
+
+Grade: 100
+Bonus: 10
+Time Bonus: 10
+Final GradeL 120
